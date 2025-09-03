@@ -1,0 +1,41 @@
+    body{
+        text-align: center;
+    }
+        
+    .img1 img{
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+        .disney-container img{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    padding: 30px;
+    animation: rotate 4s linear infinite alternate;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(-45deg);
+}
+    to{
+        transform: rotate(45deg);
+}
+}
+
+@media (max-width: 768px){
+    .disney-container{
+        display: flex;
+    }
+}
+.disney-container{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 400px 400px 400px;
+}
+    .disney-container p{
+        padding: 20px; 
+    background:linear-gradient(pink, purple , black);
+    font-size:40px;
+}   
